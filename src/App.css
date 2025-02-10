@@ -1,0 +1,70 @@
+body {
+  background-color: #B2EBF2;
+  color: #00695C;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding-top: 150px;
+}
+
+.Calc {
+  width: 450px;
+  background-color: #E3F2FD;
+  box-shadow: 0 4px 30px skyblue;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 455px;
+}
+
+.Disp {
+  height: 50px;
+  background-color: #FFFFFF;
+  border: 2px solid #B2EBF2;
+  border-radius: 10px;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 10px;
+  color: #00695C;
+  margin-bottom: 20px;
+}
+
+.Buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.Buttons > button {
+  background-color: #D7CCC8;
+  border: 2px solid #B2EBF2;
+  border-radius: 10px;
+  color: #00695C;
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.Buttons > button:hover {
+  background-color: #B2EBF2;
+  border: 1px solid #D7CCC8;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.5em;
+  border: 2px solid #B2EBF2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
